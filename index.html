@@ -1,92 +1,53 @@
-/* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linton Men Shed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <header>
+        <nav class="container">
+            <div class="logo">Linton Men Shed</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li> <li><a href="#">Projects</a></li>
+                <li class="call-us">Call us</li>
+            </ul>
+        </nav>
+    </header>
 
-/* Header & Nav */
-header {
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
-    padding: 10px 0;
-}
+    <main class="container">
+        <section class="hero-banner">
+            <img src="banner.jpg" alt="Linton Men Shed Banner">
+            <div class="banner-text">Welcome to the Shed</div>
+        </section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        <section class="photo-grid">
+            <div class="photo-card">
+                <img src="photo1.jpg" alt="Project 1">
+                <p>Our Workshop</p>
+            </div>
+            <div class="photo-card">
+                <img src="photo2.jpg" alt="Project 2">
+                <p>Community Events</p>
+            </div>
+            <div class="photo-card">
+                <img src="photo3.jpg" alt="Project 3">
+                <p>Latest Projects</p>
+            </div>
+        </section>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+        <section class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Phone:</strong> 0400 000 000</p>
+            <p><strong>Email:</strong> info@lintonmenshed.org.au</p>
+            <p><strong>Address:</strong> 123 Main St, Linton</p>
+        </section>
+    </main>
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.call-us {
-    font-weight: bold;
-    color: #d35400; /* Distinct color for the 'Call us' action */
-}
-
-/* Sections & Boxes */
-section {
-    background: #fff;
-    margin-bottom: 20px;
-    border: 2px solid #333;
-    border-radius: 15px; /* Matches your hand-drawn look */
-    overflow: hidden;
-}
-
-/* Banner */
-.hero-banner {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ddd;
-}
-
-/* Photo Grid */
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    border: none;
-    background: transparent;
-}
-
-.photo-card {
-    background: #fff;
-    border: 2px solid #333;
-    border-radius: 15px;
-    text-align: center;
-    padding: 40px 10px;
-}
-
-/* Contact Box */
-.contact-info {
-    padding: 20px;
-}
-
-/* Responsive for Mobile */
-@media (max-width: 600px) {
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
+    <script src="script.js"></script>
+</body>
+</html>
