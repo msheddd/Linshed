@@ -60,11 +60,6 @@ section {
     justify-content: center;
     background-color: #ddd;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* Photo Grid */
 .photo-grid {
