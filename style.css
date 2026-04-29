@@ -60,12 +60,10 @@ section {
     justify-content: center;
     background-color: #ddd;
 }
-.frame img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain; /* Centers and maintains aspect ratio */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Photo Grid */
